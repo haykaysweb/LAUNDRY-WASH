@@ -73,7 +73,15 @@ export const verifyToken = async ({ userId, verifyTokenLink, accessToken }) => {
 };
 
 export const updateProfile = async ({ formData, accessToken }) => {
-  return await axiosClient.patch("/user/update-user", formData, {
+  return await axiosClient.patch(`/user/update-user`, formData, {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+};
+
+export const uploadAvatar = async ({ formData, accessToken }) => {
+  return await axiosClient.patch(`/user/upload-avatar`, formData, {
     headers: {
       Authorization: `Bearer ${accessToken}`,
     },

@@ -1,6 +1,3 @@
-
-
-
 import { sendMail } from "../utils/mail.js";
 import {
   welcomeTemplate,
