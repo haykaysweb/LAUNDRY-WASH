@@ -7,10 +7,10 @@ export default function Reviews() {
         <div className="container mx-auto">
           <div className="md:flex flex-col items-center justify-center">
             <span>
-              <h1 className="text-3xl">What Our Customers Say About Us</h1>
+              <h1 className="text-2xl">What Our Customers Say About Us</h1>
             </span>
             <span className="md:text-center">
-              <p className="text-xl md:text-center">
+              <p className="text-sm md:text-center">
                 Real experiences from people who trust us with their clothes
                 every week.
               </p>

@@ -7,7 +7,7 @@ export default function HowItWorks() {
         <div className="container mx-auto">
           <div className="md:flex flex-col items-center justify-center">
             <div className="">
-              <button className="bg-(--signupBtnBg) text-2xl md:text-xl cursor-pointer px-10 py-2 rounded-full">
+              <button className="bg-(--signupBtnBg) text-xl md:text-xl cursor-pointer px-5  md:px-10 py-2 rounded-full">
                 How It Works
               </button>
             </div>
@@ -16,7 +16,7 @@ export default function HowItWorks() {
               <h1 className="text-3xl md:text-2xl py-6">
                 Expert Care for Every Fabric
               </h1>
-              <p className="text-xl md:text-center">
+              <p className="text-sm md:text-center">
                 From gentle dry cleaning to precise ironing and everyday wash &
                 fold — Obi Laundry handles your{" "}
                 <br className="hidden md:block" /> clothes with the care they
@@ -32,7 +32,7 @@ export default function HowItWorks() {
                 <h1 className="md:text-center text-2xl py-4">
                   Schedule Your Service
                 </h1>
-                <p className="md:text-center text-xl md:text-sm">
+                <p className="md:text-center text-sm">
                   Use our platform or app to select your service (Wash & Fold,
                   Dry Cleaning, etc.) and choose a convenient pick-up and
                   delivery time.
@@ -44,7 +44,7 @@ export default function HowItWorks() {
               <img src="/shield.png" alt="shield" />
               <div>
                 <h1 className="md:text-center text-2xl py-4">We Clean & Care</h1>
-                <p className="md:text-center text-xl md:text-sm">
+                <p className="md:text-center text-sm">
                   Our team collects your items, pre-treats stains, and cleans
                   your garments using professional, eco-friendly methods.
                   Everything is carefully folded and packaged.
@@ -56,7 +56,7 @@ export default function HowItWorks() {
               <img src="/delivery.png" alt="delivery" />
               <div>
                 <h1 className="md:text-center text-2xl py-4">We Deliver</h1>
-                <p className="md:text-center text-xl md:text-sm">
+                <p className="text-sm">
                   We deliver your fresh, clean, and neatly packaged laundry
                   right back to your door. Laundry done!
                 </p>
