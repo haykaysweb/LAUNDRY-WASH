@@ -10,7 +10,7 @@ export default function AdminLayout() {
       <section className="min-h-dvh">
         <Sidebar user={user} />
         <div className="lg:ml-[200px]">
-            <AdminNav/>
+          <AdminNav />
           <Outlet />
         </div>
       </section>

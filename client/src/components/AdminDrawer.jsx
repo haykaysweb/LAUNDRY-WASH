@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { useAuth } from "../hooks/UseAuth";
 import Logo from "./Logo";
-import { NavLink } from "react-router";
 
-export default function Drawer({ handleLogout }) {
+
+export default function AdminDrawer({ handleLogout }) {
   const [isOpen, setIsOpen] = useState(false);
   const { user } = useAuth();
   return (
@@ -45,27 +45,41 @@ export default function Drawer({ handleLogout }) {
                 </h1>
                 <div className="flex flex-col text-white  mt-4 gap-3">
                   <Link
-                    to="/profile"
+                    to="/admin"
                     onClick={() => setIsOpen(false)}
                     className="font-medium text-xl"
                   >
-                    Profile
+                    Dashboard
+                  </Link>
+                  <Link
+                    to="/admin/orders"
+                    onClick={() => setIsOpen(false)}
+                    className="font-medium text-xl"
+                  >
+                    Orders
+                  </Link>
+                  <Link
+                    to="/admin/revenue"
+                    onClick={() => setIsOpen(false)}
+                    className="font-medium text-xl"
+                  >
+                    Revenue
+                  </Link>
+                  <Link
+                    to="/admin/users"
+                    onClick={() => setIsOpen(false)}
+                    className="font-medium text-xl"
+                  >
+                    Users
+                  </Link>
+                  <Link
+                    to="/admin/deliveries"
+                    onClick={() => setIsOpen(false)}
+                    className="font-medium text-xl"
+                  >
+                    Deliveries
                   </Link>
 
-                  <div className="flex flex-col  gap-3 text-xl text-white">
-                    <Link to="/admin">Admin</Link>
-                    {user && (
-                      <NavLink
-                        to="/book-laundry"
-                        style={({ isActive }) => ({
-                          color: isActive ? "rgb(98, 85, 236)" : "white",
-                          textDecoration: "none",
-                        })}
-                      >
-                        Book Laundry
-                      </NavLink>
-                    )}
-                  </div>
                   <a
                     href="#"
                     onClick={handleLogout}
@@ -73,7 +87,6 @@ export default function Drawer({ handleLogout }) {
                   >
                     Logout
                   </a>
-                  
                 </div>
               </div>
             ) : (

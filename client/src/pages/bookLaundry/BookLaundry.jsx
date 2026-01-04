@@ -289,9 +289,9 @@ export default function BookLaundry() {
                   <h3>Add item</h3>
                   <div className="bg-(--cardBg) px-2 py-4 mt-3 rounded-lg">
                     <div>
-                      <div className="grid grid-cols-3 items-center justify-center gap-5">
+                      <div className="grid grid-cols-12 items-center justify-center gap-5">
                         {/* first box */}
-                        <div className="">
+                        <div className="col-span-12 md:col-span-6">
                           <label htmlFor="" className="text-xs">
                             Shirt (NGN 2,000 per)
                           </label>
@@ -311,7 +311,7 @@ export default function BookLaundry() {
                           </select>
                         </div>
                         {/* second box */}
-                        <div className="">
+                        <div className="col-span-12 md:col-span-6">
                           <label htmlFor="" className="text-xs">
                             Trouser (NGN 2,000 per)
                           </label>
@@ -331,7 +331,7 @@ export default function BookLaundry() {
                           </select>
                         </div>
                         {/* third box */}
-                        <div className="">
+                        <div className="col-span-12 md:col-span-6">
                           <label htmlFor="" className="text-xs">
                             2 Piece (NGN 2,000 per)
                           </label>
@@ -352,7 +352,7 @@ export default function BookLaundry() {
                         </div>
 
                         {/* fourth box */}
-                        <div className="">
+                        <div className="col-span-12 md:col-span-6">
                           <label htmlFor="" className="text-xs">
                             Native (NGN 2,000 per)
                           </label>
@@ -372,7 +372,7 @@ export default function BookLaundry() {
                           </select>
                         </div>
                         {/* fifth box */}
-                        <div className="">
+                        <div className="col-span-12 md:col-span-6">
                           <label htmlFor="" className="text-xs">
                             Duveet (NGN 2,000 per)
                           </label>
@@ -392,7 +392,7 @@ export default function BookLaundry() {
                           </select>
                         </div>
                         {/* sixth box */}
-                        <div className="">
+                        <div className="col-span-12 md:col-span-6">
                           <label htmlFor="" className="text-xs">
                             Special Item (NGN 5,000 per)
                           </label>
@@ -430,7 +430,7 @@ export default function BookLaundry() {
                     className="bg-white mt-2 py-2 rounded-sm text-black px-2"
                   />
                 </div>
-                <div className="w-full flex items-center justify-center gap-5 mt-5">
+                <div className="w-full flex flex-col md:flex-row items-center justify-center gap-5 mt-5">
                   <button type="submit" className="border border-white w-full rounded-full py-3" onClick={cancelForm}>
                     Cancel
                   </button>

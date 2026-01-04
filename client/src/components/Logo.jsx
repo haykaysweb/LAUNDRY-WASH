@@ -7,7 +7,7 @@ export default function Logo() {
       <img
         src="/Frame 2.png"
         alt="logo"
-        className="w-[215px] md:auto"
+        className="w-[200px] md:auto"
         onClick={() => navigate("/")}
       />
     </div>
