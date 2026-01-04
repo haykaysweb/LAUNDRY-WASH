@@ -43,7 +43,7 @@ export default function AdminDrawer({ handleLogout }) {
                 <h1 className="text-xl text-white font-semibold capitalize">
                   Hi, {user.fullname}
                 </h1>
-                <div className="flex flex-col text-white  mt-4 gap-3">
+                <div className="flex flex-col text-white  mt-10 gap-10">
                   <Link
                     to="/admin"
                     onClick={() => setIsOpen(false)}

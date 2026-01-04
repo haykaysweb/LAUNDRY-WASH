@@ -17,7 +17,7 @@ export default function Reviews() {
             </span>
           </div>
 
-          <section className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10 py-15">
+          <section className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5 md:gap-10 py-15">
             <div className="bg-(--cardBg) cardGradient rounded-tl-[35px] rounded-tr-[35px] rounded-br-[40px] rounded-bl-[40px] cursor-pointer">
               <div className="p-5 text-sm bg-(--cardBg) rounded-tr-[30px] rounded-tl-[30px]  rounded-br-[30px]">
                 <span className="flex gap-3 pb-3">

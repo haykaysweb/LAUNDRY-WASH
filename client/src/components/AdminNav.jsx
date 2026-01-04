@@ -53,12 +53,12 @@ export default function AdminNav() {
             onChange={debounceFn}
           />
         </label>
-        <div className="flex items-center justify-between gap-1">
+        <div className="flex items-center justify-between gap-5">
           <div className="pl-5">
             <UserAvatar />
           </div>
           <div>
-            <AdminDrawer />
+            <AdminDrawer className=""/>
           </div>
         </div>
       </div>
