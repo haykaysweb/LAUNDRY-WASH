@@ -58,7 +58,7 @@ export default function AdminNav() {
             <UserAvatar />
           </div>
           <div>
-            <AdminDrawer className=""/>
+            <AdminDrawer/>
           </div>
         </div>
       </div>
