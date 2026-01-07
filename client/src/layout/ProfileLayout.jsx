@@ -1,5 +1,3 @@
-
-
 import { NavLink, Outlet } from "react-router";
 import { profileLinks } from "@/utils/constants";
 import Logout from "@/components/Logout";
@@ -10,8 +8,12 @@ export default function ProfileLayout() {
   return (
     <>
       <div className="min-h-screen">
+        {/* Avatar upload section */}
         <UploadAvatar />
-        <div className="container text-white mx-auto py-10 px-4 md:grid grid-cols-12 gap-10">
+
+        {/* Main content */}
+        <div className="container mx-auto text-white py-10 px-4 md:px-10 md:grid grid-cols-12 gap-10">
+          {/* Sidebar / Profile links */}
           <div className="col-span-12 md:col-span-3 flex flex-col gap-2">
             {profileLinks.map((link) => (
               <NavLink
@@ -28,14 +30,18 @@ export default function ProfileLayout() {
                 {link.label}
               </NavLink>
             ))}
+
+            {/* Logout button */}
             <Logout />
           </div>
 
-          <div className="col-span-12 md:col-span-9 w-full mt-10 md:mt-0">
+          {/* Content area */}
+          <div className="col-span-12 md:col-span-9 w-full mt-6 md:mt-0">
             <Outlet />
           </div>
         </div>
 
+        {/* Footer */}
         <FooterOne />
       </div>
     </>

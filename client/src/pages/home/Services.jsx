@@ -1,5 +1,3 @@
-import { Link } from "react-router";
-
 export default function Services() {
   return (
     <>
@@ -13,9 +11,7 @@ export default function Services() {
             </div>
 
             <div className="flex flex-col w-full">
-              <h1 className="text-2xl">
-                Expert Care for Every Fabric
-              </h1>
+              <h1 className="text-2xl">Expert Care for Every Fabric</h1>
               <p className="mt-4 text-sm md:text-xl">
                 From gentle dry cleaning to precise ironing and everyday wash &
                 fold — Obi Laundry handles your clothes with the care they
@@ -25,7 +21,7 @@ export default function Services() {
           </div>
         </div>
         {/* card section for service starts from here */}
-        <section className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-10 mt-15 text-white">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-15 text-white">
           {/* first box */}
           <div className="bg-(--cardBg) p-2 rounded-xl w-full">
             <div className="flex items-center justify-center ">

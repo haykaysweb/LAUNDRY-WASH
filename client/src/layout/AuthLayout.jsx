@@ -25,7 +25,7 @@ export default function AuthLayout() {
                   </span>
                 </div>
 
-                <div className="">
+                <div className="mt-2">
                   <h1 className="font-semibold text-sm">
                     A lifesaver for my busy schedule.
                   </h1>
@@ -50,23 +50,4 @@ export default function AuthLayout() {
   );
 }
 
-// <div className="flex w-[24%] text-white">
-//   <div className="flex items-center gap-2">
-//     <img src="/Ellipse 5.png" alt="" />
-//     <div className=" flex flex-col text-xs space-y-1">
-//       <p className="font-semibold">Zoe Saldana</p>
-//       <p>Galazy Guardian</p>
-//     </div>
-//   </div>
-// </div>
-// <div className="w-[70%] text-white">
-//   <h1 className="font-semibold">
-//     A lifesaver for my busy schedule.
-//   </h1>
-//   <p className="text-xs mt-2 w-full">
-//     I drop my clothes in the morning and pick them up perfectly
-//     folded by evening. Everything smells fresh, and not a single
-//     sock goes missing. Honestly, this service has saved me hours
-//     every week.
-//   </p>
-// </div>
+

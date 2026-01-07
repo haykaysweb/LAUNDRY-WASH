@@ -36,7 +36,7 @@ export default function Nav() {
               <UserAvatar />
             ) : (
               /* AUTH BUTTONS (Desktop Only) */
-              <div className="hidden md:flex items-center space-x-3">
+              <div className="hidden lg:flex items-center space-x-3">
                 <Link
                   className="bg-(--signupBtnBg) rounded-full px-3 py-2 md:px-6 md:py-2 text-white"
                   to="/signup"
@@ -52,7 +52,7 @@ export default function Nav() {
               </div>
             )}
 
-            <div className="block lg:hidden">
+            <div className="block md:hidden">
               <Drawer handleLogout={handleLogout} />
             </div>
           </div>

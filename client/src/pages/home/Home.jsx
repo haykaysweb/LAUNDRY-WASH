@@ -16,16 +16,16 @@ export default function Home() {
               delivery service. <br className="hidden md:block" /> Because you
               deserve clean clothes without the wait.
             </p>
-            <div className="flex flex-col md:flex-row gap-3 md:gap-0 items-center justify-center space-x-2 md:space-x-1 py-6">
+            <div className="flex flex-row gap-1 md:gap-0 items-center justify-center space-x-1 md:space-x-1 py-6">
               <Link
                 to="/book-laundry"
-                className="bg-(--signupBtnBg) rounded-full px-6 py-2 text-white w-full md:w-auto text-center"
+                className="bg-(--signupBtnBg) rounded-full px-6 py-2 text-white w-auto text-center"
               >
                 Book Laundry
               </Link>
               {!user && (
                 <Link
-                  className="text-(--signupBtnBg) border border-(--signupBtnBg) px-6 py-2 rounded-full w-full md:w-auto text-center"
+                  className="text-(--signupBtnBg) border border-(--signupBtnBg) px-6 py-2 rounded-full w-auto text-center"
                   to="/login"
                 >
                   Login

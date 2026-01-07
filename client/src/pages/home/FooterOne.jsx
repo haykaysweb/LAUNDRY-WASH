@@ -17,7 +17,7 @@ export default function FooterOne() {
             <Link>Services</Link>
             <Link>Contact Us</Link>
           </div>
-          <section className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] text-center md:text-start md:w-[75%] gap-5 mt-10 px-5 md:px-0">
+          <section className="flex flex-col flex-wrap md:flex-row md:justify-between md:w-[80%] text-center md:text-start gap-5 mt-12 px-5 md:px-0">
             <span>
               <h3 className="text-gray-400 text-sm">CONTACT</h3>
               <p className="text-xs">+1 891 989-11-91</p>
