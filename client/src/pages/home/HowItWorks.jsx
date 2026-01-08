@@ -25,7 +25,7 @@ export default function HowItWorks() {
             </span>
           </div>
           {/* card section */}
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-10 md:gap-23 py-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-23 py-10">
             <div className="md:flex flex-col items-center justify-center">
               <img src="/calendar.png" alt="calender" />
               <div>

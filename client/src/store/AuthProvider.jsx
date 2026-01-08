@@ -5,18 +5,28 @@ import LazySpinner from "@/components/LazySpinner";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { jwtDecode } from "jwt-decode";
-
+import { safeGetItem, safeSetItem, safeRemoveItem } from "@/utils/storage";
 
 export default function AuthProvider({ children }) {
-  const [accessToken, setAccessToken] = useState(null);
+  const [accessToken, setAccessToken] = useState(() => {
+    return safeGetItem("laundryBookingToken") || null;
+  });
   const [isAuthenticating, setIsAuthenticating] = useState(false);
   const [user, setUser] = useState(null);
   const [bookingForm, setBookingForm] = useState(() => {
-    const persistedState = localStorage.getItem("laundryBookingForm");
+    const persistedState = safeGetItem("laundryBookingForm");
     return persistedState ? JSON.parse(persistedState) : null;
   });
 
   const queryClient = useQueryClient();
+
+  useEffect(() => {
+    if (accessToken) {
+      safeSetItem("laundryBookingToken", accessToken);
+    } else {
+      safeRemoveItem("laundryBookingToken");
+    }
+  }, [accessToken]);
 
   const refreshTokenAction = useCallback(async () => {
     try {
@@ -79,11 +89,8 @@ export default function AuthProvider({ children }) {
       }
     }
     fetchUser();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [accessToken]);
-
-
-
 
   //refresh accessToken
   // const refresh = useQuery({
@@ -115,7 +122,7 @@ export default function AuthProvider({ children }) {
   //     }
   //     return res;
   //   },
-    //enabled: !!accessToken, //run only when there is an accesstoken
+  //enabled: !!accessToken, //run only when there is an accesstoken
   // });
 
   const mutation = useMutation({
