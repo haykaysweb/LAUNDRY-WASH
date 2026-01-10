@@ -33,7 +33,7 @@ export default function FooterOne() {
               </p>
             </span>
           </section>
-          <div className="relative">
+          <div className="relative hidden">
             <a
               href="#home"
               className="fixed bottom-1 right-8 z-1000 bg-(--signupBtnBg) p-2 rounded-full"
