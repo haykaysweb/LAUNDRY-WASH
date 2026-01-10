@@ -43,7 +43,7 @@ export default function FooterOne() {
           </div>
           <hr className="text-(--signupBtnBg) mt-5" />
           <div className="mt-3 text-white px-5 md:px-0">
-            <span className="text-xs text-gray-400">&copy-copyright</span>
+            <span className="text-xs text-gray-400">&copy-Akeredolu Kolawole</span>
           </div>
         </div>
       </div>

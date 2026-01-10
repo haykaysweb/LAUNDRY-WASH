@@ -296,7 +296,7 @@ export default function BookLaundry() {
                             Shirt (NGN 2,000 per)
                           </label>
                           <select
-                            className="w-full text-sm bg-white text-black py-2 rounded-sm mt-1"
+                            className="w-full text-sm bg-white text-black py-4 rounded-sm mt-1"
                             {...register("shirt")}
                           >
                             <option value="" disabled selected>
